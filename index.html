@@ -3,10 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Nodari provides news, guides and educational explanations about cryptocurrencies, blockchain and Web3 in clear English.">
+<meta name="description" content="Nodari offers clear crypto news, market analysis, beginner guides and educational explanations about cryptocurrencies, blockchain and Web3.">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#0A0E17">
-<title>Nodari — Crypto explained clearly</title>
+<link rel="canonical" href="https://nodaricrypto.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nodaricrypto.com/">
+<meta property="og:title" content="Nodari Crypto | News, Guides and Market Analysis">
+<meta property="og:description" content="Clear crypto news, market analysis, beginner guides and educational explanations about cryptocurrencies, blockchain and Web3.">
+<meta property="og:site_name" content="Nodari">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Nodari Crypto | News, Guides and Market Analysis">
+<meta name="twitter:description" content="Clear crypto news, market analysis, beginner guides and educational explanations about cryptocurrencies, blockchain and Web3.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://nodaricrypto.com/#website",
+      "url": "https://nodaricrypto.com/",
+      "name": "Nodari",
+      "description": "Clear crypto news, market analysis, beginner guides and educational explanations about cryptocurrencies, blockchain and Web3.",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://nodaricrypto.com/#organization",
+      "name": "Nodari",
+      "url": "https://nodaricrypto.com/"
+    }
+  ]
+}
+</script>
+<title>Nodari Crypto | News, Guides and Market Analysis</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -726,7 +757,7 @@ function photoThumb(cat){
   const meta = CATEGORY_META[cat] || CATEGORY_META.Blockchain;
   const url = `https://images.unsplash.com/${meta.photo}?w=800&q=70&auto=format&fit=crop`;
   const icon = catIcon(cat);
-  return `<img src="${url}" loading="lazy" alt="Imagen ilustrativa de ${cat}" data-fallback-cat="${cat}" onerror="handlePhotoError(this)">
+  return `<img src="${url}" width="800" height="500" loading="lazy" decoding="async" alt="${cat} cryptocurrency editorial illustration" data-fallback-cat="${cat}" onerror="handlePhotoError(this)">
     <div class="thumb-tint" style="background:${meta.color}"></div>
     <span class="thumb-cat-badge"><svg viewBox="0 0 24 24" fill="none" stroke="${meta.color}" stroke-width="1.8">${icon}</svg></span>`;
 }
@@ -1314,3 +1345,4 @@ refreshMarketData();
 </script>
 </body>
 </html>
+
